@@ -1,0 +1,46 @@
+
+char * favorite_fruit(){
+	char deciduous[] = "apple";
+	return deciduous;
+}
+
+
+the automatic variable deciduous is allocated on the stack when the function is entered;
+after the function is exited,the variable no longer exists,and the stack space can be 
+overwritten at any time.
+Pointer that have lost their validity in this way(by referencing something that is no longer live)
+are known as "dangling pointers"--they don;t reference anything useful,just kind of dangle in space.
+
+If you need to return a pointer to something defined in a function,the define the thing as static.
+
+The lifetime of the variable is thus the lifetime of the program,and as a side effect it retains
+its value even after the function that defines it exits.
+
+That value will still be available when the function is next entered.
+
+aoto--> make your declarations line up neatly
+
+register int filbert;
+	auto int almond;
+	static int hazel
+
+instead of:
+
+register int filbert;
+int almond;
+static int hazel;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

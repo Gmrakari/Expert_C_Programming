@@ -1,0 +1,26 @@
+					750 Kbyte								506 Kbyte
+			 statically linked with libc.a		==>  results in a.out
+			/
+hello.o == > 
+			\
+			 dynamically linked with libc.so	==> results in a.out
+			 		620 Kbyte								5 Kbyte
+
+
+
+cat tomato.c
+	my_lib_function() { printf("library routine called\n"); }
+
+cc -o libfruit.so -G tomato.c
+
+
+the lib file is .so type
+
+
+
+
+
+
+
+
+

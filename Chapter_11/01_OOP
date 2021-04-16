@@ -1,0 +1,24 @@
+
+abstraction:
+	The process of refining away the unimportant details of an object,so that only the essential characteristics that describe
+it remain.Abstraction is a design activity.The other concepts are the OOP features that provide it.
+
+Class:
+	A user-defined type,just as int is a build-in type.The build-in types have well-defined operations(arithmetic etc.) on
+them,and the class mechanism must allow the programmer to specify operations on the class types he or she defines,too.Anything 
+in a class is known as a member of the class.
+
+Object:
+	A specific variable of a class type,just as j may be a specific variable of type int.An object is also known as an instance of
+a class.
+
+Encapsulation:
+	Grouping together the types,data,and functions that make up a class.In C,a header file provides a very weak example of encapsulation.
+It is a feeble example because it is a purely lexical convention,and the compiler knows nothing about the header file as a semantic unit.
+
+Inheritance:
+	This is the big one-allowing one class to receive the data structures and functions described in a simpler base class.The derived class
+gets the operations and data of the base class,and can specialize or customize them as needed.It can also add new data and function members.
+There's no example in C that suggests the concept of inheritance.C does not have anything resembling this feature.
+
+

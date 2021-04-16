@@ -1,0 +1,26 @@
+
+
+INT compare(s1,s2)
+	STRING s1;
+	STRING s2;
+BEGIN 
+	WHILE *s1++ == *s2
+	DO IF *s2++ == 0
+		THEN return(0);
+		FI
+
+	OD
+		return(*--s1 - *s2);
+END
+
+#change into C code
+
+int compare(s1,s2)
+	char *s1,*s2;
+	{
+		while(*s1++ == *s2){
+			if(*s2++ == 0)	return(0);
+		}
+		return (*--s1 - *s2);
+	}
+

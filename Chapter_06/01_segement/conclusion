@@ -1,0 +1,8 @@
+
+the data segment is kept in the object file
+
+the BSS segement isn't kept in the object file(except for a note of tis runtime size requirements)
+
+the text segment is the one most affected by optimization
+
+the a.out file size is affected by compiling for debugging,but the segments are not

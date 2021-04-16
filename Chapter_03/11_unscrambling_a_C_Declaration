@@ -1,0 +1,20 @@
+what does "char *(*c [10]) (int **p)" mean?	
+
+char *(*c [10]) (int **p)		step1:			say "c is a ..."
+
+char *(* [10]) (int **p)		step2:			say"array[0..9] of ..."
+
+char *(*) (int **p)				step5:			say"pointer to..."
+
+char *() (int **p)				step4:			delete the parens,go to step2,fall through step 2 to step 3
+
+char * (int **p)				step3:			say"function returning..."
+
+char *							step5:			say"pointer to..."
+
+char 							step6			say"char"
+
+
+read:"c is an array[0...9] of pointer to a function returning a pointer-to-char"
+and we're done.Note:the fuctions pointed to in the array take a pointer to 
+a pointer as their one and only parameter.

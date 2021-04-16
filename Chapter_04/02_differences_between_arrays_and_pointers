@@ -1,0 +1,31 @@
+
+
+
+Pointer:
+Holds the address of data
+	
+Data is accessed indirectly,so you first retrieve the contents of the pointer,
+load that as an address(call it "L"),the retrieve its contents.
+
+If the pointer has a subscript [i[ you instead retrieve the contents of the location 'i'
+units past "L"
+
+Commonly used for dynamic data structures
+
+Commonly used with malloc(),free()
+
+Typically points to anonymous data
+
+Array:
+Holds data
+
+Data is accessed directly,so for a[i] you simply retrieve the contents of the location i units past a
+
+COmmonly used for holding a fixed number of elements of the same type of data
+
+Implicitly allocated and deallocated
+
+Is a named variable in its own right
+
+
+

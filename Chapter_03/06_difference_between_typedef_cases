@@ -1,0 +1,25 @@
+
+
+typedef int x[10] and #define x int[10]
+
+Look:
+
+#define peach int 
+unsigned peach i; /* work */
+
+typedef int banana;
+unsigned banana i; /* illegal */
+
+
+a typedef'd name provides the type for every declarator in a declaration
+
+#define int_ptr int *
+int_ptr chalk,cheese;
+
+afer macro expansion,the second line effectively becomes:
+int * chalk,cheese;
+
+typedef char * char_ptr;
+char_ptr Bentley,Rolls_Royce;
+
+

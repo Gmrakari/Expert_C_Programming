@@ -1,0 +1,36 @@
+
+
+
+Instead of the declaration saying "this name refers to a variable of the stated type"
+
+the typedef keyword doesn't create a variable,but causes the declaration to say
+
+"this name is a synonym for the stated type."
+
+void (*signal(int sig,void(*func)(int)))(int);
+
+void (*signal(					)) (int);
+
+signal is a function (with some funky arguments) returnning a pointer to a function
+
+(taking an int argument and returning void).
+
+void (*func)(int);
+
+a pointer to a function taking an int argument and returning void.
+
+
+typedef void (*ptr_to_func) (int);
+	/* this sya that ptr_to_func is a pointer to a function
+	 * that takes an int argument,and returns void
+	 */
+
+ptr_to_func signal(int,ptr_to_func);
+	/* this say that signal is a function that takes 
+	 * two arguments, an int and a ptr_to_func,and
+	 * return a ptr_to_func
+	 */
+
+
+
+

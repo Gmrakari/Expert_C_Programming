@@ -1,0 +1,58 @@
+
+definition:
+	occurs in only one place
+	specifies the type of an object;reserves storage for it;is used to create new objects
+	example:int my_array[100];
+
+declaration:
+	can occur multiple times
+	describes the type of an object;is used to refer to objects defined elsewhere(e.g. in another file)
+	example:extern int my_array[];
+
+distinguishing a definition from a declaration
+	a definition is the special kind of declaration that fixes the storage for an object
+
+	a declaration is like a customs declaration:it is not the thing itself,merely a description
+of some baggage that you say you have around somewhere
+
+
+The difference between an address(l-value) and the contents of the address (r-value)
+
+																	x = y;
+the symbol x,in this context,means the address that x represents			the symbol y,in this context,means the contents of the addres
+
+An l-value says where to store the result									An r-value is not known until runtime. "The value of y"mean the r-value unless otherwise stated
+
+
+A:Subscripted Array Reference 
+
+char a[9] = "abcdefgh";...c = a[i]
+
+compiler symbol table has a as address 9980
+	runtime step1:get value i,and add it to 9980
+	rumtime step2:get the contents from address(9980 + i)
+
+B:A Pointer Reference 
+
+char *p;....c = *p;
+
+compiler symbol table has p as address 4624
+	runtime step1:get the contents from address 4624.say '5081'
+	rumtime step2:get the contents from address 5081
+
+What happens when you "define as pointer/reference as array"
+
+C: A Subscripted Pointer Reference
+
+char *p = "abcdefgh";c = p[i];
+
+compiler symbol table has p as address 4624
+	runtime step1:get the contents from address 4624,say '5081'
+	runtime step2:get value i,and add it to 5081
+	runtime step3:get the contents from address (5081 + i)
+
+More formally,the compiler emits code to:
+	step1:Get the address that p represents,and retrieve the pointer there;
+	step2:Add the offset that the subscript represents onto the pointer value;
+	step3:Access the byte at the resulting address.
+

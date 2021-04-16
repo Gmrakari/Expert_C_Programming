@@ -1,0 +1,24 @@
+
+
+struct vnode{
+		long			v_flag;
+		long			v_usecount;
+		struct vnode 	*v_freef;
+		struct vnodeops *v_op;
+};
+
+
+typedef struct baz { int baz;} baz;
+		struct baz variable_1;
+		struct baz variable_2;
+
+typedef struct my_tag { int i;} my_type;
+		struct my_tag variable_1;
+
+		my_type variable_2;
+
+typedef struct fruit { int weight,price_per_lb; }fruit;
+		struct veg { int weight,orice_per_lb; }veg; 
+		
+
+
