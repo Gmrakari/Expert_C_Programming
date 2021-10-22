@@ -22,6 +22,6 @@ Answer:
 
 "c is an array[0..9] of pointer to a function returning a pointer-to-char"
 
-the fuctions pointed to in the array take a pointer to a pointer as their one and
+the functions pointed to in the array take a pointer to a pointer as their one and
 only parameter
 
