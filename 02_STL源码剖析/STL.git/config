@@ -1,9 +1,0 @@
-[core]
-	repositoryformatversion = 0
-	filemode = true
-	bare = true
-[remote "origin"]
-	url = git@github.com:Gmrakari/STL.git
-	fetch = +refs/*:refs/*
-	mirror = true
-	pushurl = git@github.com:Gmrakari/Reading_Note.git
